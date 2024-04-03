@@ -44,14 +44,14 @@ Example:
 ```
 
 
-### Assets Growth
+## Assets Growth
 The advisor calculates the growth in the market price of various assets including:
 ETFs<br/>
 Stocks<br/>
 Bonds<br/>
 The growth is represented as a percentage.
 
-### Assets Growth Data
+## Assets Growth Data
 ```prolog
 etfs(assets_class(EU_ETFs, US_ETFs, EU_ETFs_Growth, US_ETFs_Growth)).
 stocks(assets_class(EU_Stock, US_Stocks, EU_Stocks_Growth, US_Stocks_Growth)).
@@ -64,7 +64,6 @@ Example:
 ## Taxation
 The advisor also provides taxation details based on the capital gains with a flat 27.5% tax rate as per Austrian law.
 
-### Taxation Data
 ```prolog
 tax(components(Capital, Growth_Bonds, Growth_Stocks, Growth_ETFs, Avg_Growth, Income, Profit, TaxAmount, RemainingAmount))
 ```
@@ -81,10 +80,10 @@ Example:
 ?- tax(components(10000, 5, 10, 15, Avg_Growth, Income, Profit, TaxAmount, RemainingAmount)).
 ```
 
-### Contributing
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-### License
+## License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ```sql
